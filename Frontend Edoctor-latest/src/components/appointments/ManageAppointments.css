@@ -1,0 +1,123 @@
+/* ManageAppointments.css */
+
+.manage{
+  background-image: url('https://img.freepik.com/free-vector/national-doctor-s-day-hand-drawn-background_23-2149438164.jpg?t=st=1734505897~exp=1734509497~hmac=5c0d2b97d6dc83df7c44e47effbf7f693ead6b1bbad7fe1f66c379302371e456&w=996');
+    background-size: cover;
+    background-position: center;
+}
+.manage-appointments {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease-out;
+}
+
+.manage-appointments h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.manage-appointments .error {
+    color: #e74c3c;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.appointment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.appointment-list li {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.appointment-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.appointment-list li strong {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.appointment-list li p {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Color the doctor's and patient's name */
+.appointment-list .doctor-name {
+    color: #de0000;  /* Blue color for doctor's name */
+    font-weight: bold;
+}
+
+.appointment-list .patient-name {
+    color: #2ecc71;  /* Green color for patient's name */
+    font-weight: bold;
+}
+
+/* Color the appointment time */
+.appointment-list .appointment-time {
+    color: #1228f3;  /* Yellow color for the appointment time */
+}
+
+.appointment-list .status {
+    color: #1db100;  /* Red color for status */
+    font-weight: bold;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Animation for elements */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
